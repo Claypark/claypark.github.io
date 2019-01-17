@@ -24,7 +24,7 @@ url                      : "https://claypark.github.io" # the base hostname & pr
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/bio_image.jpg"
-logo                     : "/assets/images/88x88.png"
+logo                     : #"/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -129,7 +129,7 @@ author:
       # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      #url: "https://www.instagram.com/bak_chung2"
+      url: "https://www.instagram.com/bak_chung2"
 
 # Site Footer
 footer:
