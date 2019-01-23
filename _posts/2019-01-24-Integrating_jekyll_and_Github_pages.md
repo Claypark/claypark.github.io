@@ -8,6 +8,7 @@ tags:
 ---
 
   **Jekyll** is generator which convert text to static page. So, you can make site easily by using Jekyll. But you have some problem about server. It is difficult to operate server for 24 hours and config for connect to external network. So, there is a good solution to solve this problem. *github pages.*
+  
   **Github pages** is feature that makes website in user's repository. you can easily make a website by typing some text such as *username.github.io* in the title when you create repository. It is no problem about keep operating your server because it is managed all by github. you don't worry about turning on your local server. now, let's make your page.
  
  ## Create Repository
