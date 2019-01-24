@@ -1,0 +1,11 @@
+main:
+  - title: "Home"
+    url: /docs/quick-start-guide/
+  - title: "iOS"
+    url: /year-archive/
+  - title: "Jekyll"
+    url: /categories/
+  - title: "Food"
+    url: /tags/
+  - title: "ETC"
+    url: /page-archive/
