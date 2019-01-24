@@ -1,11 +1,11 @@
 main:
   - title: "Home"
-    url: /docs/quick-start-guide/
+    url: /
   - title: "iOS"
-    url: /year-archive/
+    url: /
   - title: "Jekyll"
-    url: /categories/
+    url: /
   - title: "Food"
-    url: /tags/
+    url: /
   - title: "ETC"
-    url: /page-archive/
+    url: /
