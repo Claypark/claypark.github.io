@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "claypark's doodle."
+title                    : "Claypark's doodle."
 title_separator          : "-"
-name                     : "claypark"
+name                     : "Claypark"
 description              : "just doodle."
 url                      : "https://claypark.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "클팍"
   avatar           : "/assets/images/bio_image.jpg"
-  bio              : "인스타 하듯 자주 좀 들어오자."
+  bio              : "Before my time is done, I'll look down on your corpse and smile."
   location         : "Seoul, Korea"
   email            : "claypark12@gmail.com"
   links:
