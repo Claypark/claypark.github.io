@@ -85,8 +85,8 @@ defaults:
       share: true
 
 # Site Author
-author: "Claypark"
-  name:
+author:
+  name: "Claypark"
   picture:
   email: "claypark12@gmail.com"
   twitter:
