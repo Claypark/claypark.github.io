@@ -104,5 +104,5 @@ footer_links:
     url: atom.xml
     icon: fas fa-rss-square
   - title: Mail
-    url: claypark12@gmail.com
+    url: mailto://claypark12@gmail.com
     icon: fas fa-envelope-square
