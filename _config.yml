@@ -105,4 +105,4 @@ footer_links:
     icon: fas fa-rss-square
   - title: Mail
     url: claypark12@gmail.com
-    icon: far fa-envelope
+    icon: fas fa-envelope-square
