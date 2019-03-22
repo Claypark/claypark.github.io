@@ -4,7 +4,7 @@ date: 2019-03-22 17:34:12 +0900
 categories: iOS
 tags:
 - CollectionView
-- estimatedSize
+- UI
 ---
 
 ## 개요
