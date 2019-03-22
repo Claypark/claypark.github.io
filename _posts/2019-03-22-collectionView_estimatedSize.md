@@ -6,7 +6,9 @@ tags:
 - CollectionView
 - UI
 ---
-
+  
+  
+  
 ### 개요
 
 구현할 것:
@@ -16,17 +18,17 @@ tags:
 - CollectionViewLayout의 estimatedSize 설정해주기.
 - CollectionViewCell에서 메소드 구현해주기.
 - Autolayout을 통해 width 고정 시키기.
-  
-  
-  
+\
+\
+ 
 ### CollectionViewLayout의 estmatedSize 설정해주기.
 
 ```swift
 collectionViewLayout.itemSize = UICollectionViewFlowLayout.automaticSize
 collectionViewLayout.estimatedItemSize = CGSize(width: 100, height: 100)
 ```
-  
-  
+\  
+\  
   
 ### CollectionViewCell에서 메소드 구현해주기.
 
@@ -43,8 +45,8 @@ override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionV
     return layoutAttributes
 }
 ```
-  
-  
+\  
+\  
   
 ### Autolayout을 이용해 width 고정시키기.
 
@@ -55,8 +57,8 @@ override func awakeFromNib() {
     ...
 }
 ```
-  
-  
+\  
+\  
   
 ## 전체 코드
 
