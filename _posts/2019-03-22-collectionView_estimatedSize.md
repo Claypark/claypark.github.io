@@ -17,6 +17,7 @@ tags:
 - CollectionViewCell에서 메소드 구현해주기.
 - Autolayout을 통해 width 고정 시키기.
 <br/>
+<br/>
 
 ### CollectionViewLayout의 estmatedSize 설정해주기.
 
