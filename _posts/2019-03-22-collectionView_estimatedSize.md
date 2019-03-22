@@ -6,9 +6,7 @@ tags:
 - CollectionView
 - UI
 ---
-<br/>  
-<br/>  
-  
+
 ### 개요
 
 구현할 것:
