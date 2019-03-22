@@ -6,7 +6,7 @@ tags:
 - gitignore
 ---
 
-gitignore에 무시할 파일을 등록했는데, 작동하지 않을 때
+gitignore에 무시할 파일을 등록했는데, 작동하지 않을 때,\
 git의 캐시된 파일들을 다 지우고 commit하면 된다.
 
 ```bash
