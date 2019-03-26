@@ -7,8 +7,6 @@ tags:
 - UI
 ---
 
-### 개요
-
 구현할 것:
 - width가 고정인 CollectionViewCell의 자동 높이 계산.
 
