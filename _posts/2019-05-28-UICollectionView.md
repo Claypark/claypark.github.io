@@ -43,6 +43,19 @@ class UICollectionView : UIScrollView
 &nbsp;&nbsp;&nbsp;&nbsp;
 *gesture recognizer*나 *touch events*에 의해 작동되는 interactive transition을 만들고 싶다면, `startInteractiveTransition(to:completion:)`메소드를 호출하여 *layout* 객체를 변경하십시오. 이 메소드는 중간 *layout* 객체를 만듭니다. 이 객체의 목적은 트랜지션 진행을 추적하기 위해 *gesture recognizer*나 *event-handling code*와 함께 작동하기 위함입니다. `event-handling code`가 트랜지션이 끝난 것을 결정 할 때, `finishInteractiveTransition()`이나 `cancelInteractiveTransition()`메소드를 호출하여 중간 *layout*객체를 지우고 의도했던 *layout* 객체로 설정하십시오.
 
-## *Cell*과 *Supplimentary View* 생성하기
+## Cell과 Supplimentary View 생성하기
 
 &nbsp;&nbsp;&nbsp;&nbsp;
+컬렉션 뷰의 *dataSource*객체는 *item*의 내용과, 컨텐츠를 표시하는데 사용할 *view* 를 제공합니다. 컬렉션 뷰가 컨텐츠를 처음 로드할 때, *dataSource*에게 현재 보이는 *item*에 대한 *view*를 제공해달라고 요청합니다. 코드 작성을 간단히 하기 위해서는, 코드에서 명시적으로 뷰를 생성하는 대신, 컬렉션 뷰에서 항상 *view*들을 *dequeue*하도록 해야합니다. 아래에 뷰를 dequeueing하기 위한 두 개의 메소드가 있습니다. 메소드는 요청하는 뷰의 타입에 따라서 호출하면 됩니다.
+
+- `dequeueReusableCell(withReuseIdentifier:for:)`: *collectionView* 내에서 *item*에 대한 __*cell*__을 얻을 때 사용합니다.
+- `dequeueReusableSupplementaryView(ofKind:withReuseIdentifier:for:)`: *layout* 객체에 의해 요청된 __*supplementary view*__ 를 얻을 때 사용합니다.
+
+위의 메소드들을 호출하기 전에, *collectionView*에 *class*나 *nib* 파일을 등록하는 과정을 통해서 반드시 *collectionView*에게 어떻게 해당 뷰를 생성할 지 알려줘야 합니다. 예를 들면, *cell*을 등록할 때, `register(_:forCellWithReuseIdentifier:)`나 `register(_:forCellWithReuseIdentifier:)`메소드를 사용해서 컬렉션 뷰에 등록합니다. 이 과정에서 뷰의 목적에 맞는 *reuse identifier*를 지정할 수 있습니다. 이 *reuse identifier* string을 나중에 *view*를 *dequeueing*할 때 사용할 수 있습니다.
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+*delegate* 메소드안에서 적합한 뷰를 *dequeueing*한 이후, 컬렉션 뷰를 사용하기 위해 뷰의 컨텐츠를 설정하고 리턴하십시오. *layout*객체로부터 레이아웃 정보를 받은 이후에, 컬렉션 뷰는 뷰에 레이아웃을 적용하고 화면에 보여줍니다.
+
+view를 설정하고 만들기 위한 *data source* 메소드를 구현하는 더 많은 정보는, 이 [`UICollectionViewDataSource`](https://developer.apple.com/documentation/uikit/uicollectionviewdatasource)를 참조하십시오.
+
+## 
