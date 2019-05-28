@@ -40,4 +40,8 @@ class UICollectionView : UIScrollView
 일반적으로 컬렉션 뷰를 생성할 때 *layout*객체를 지정하는데, 컬렉션 뷰의 *layout*을 동적으로 변경할 수도 있습니다. *layout*객체는 *collectionView* 내에 `collectionViewLayout`프로퍼티로 저장되어 있습니다. 이 프로퍼티를 변경하면, 애니메이션 없이 즉시 *layout*이 갱신됩니다. 애니메이팅 되는것을 원한다면, 반드시 `setCollectionViewLayout(_:animated:completion:)`메소드를 호출해줘야 합니다.
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-*gesture recognizer*나 *touch events*에 의해 작동되는 interactive transition을 만들고 싶다면, `startInteractiveTransition(to:completion:)`메소드를 호출하여 *layout* 객체를 변경하십시오. 이 메소드는 중간 *layout* 객체를 만듭니다. 이 객체의 목적은 트랜지션 진행을 추적하기위해 *gesture recognizer*나 *event-handling code*와 함께 작동하기 위함입니다.
+*gesture recognizer*나 *touch events*에 의해 작동되는 interactive transition을 만들고 싶다면, `startInteractiveTransition(to:completion:)`메소드를 호출하여 *layout* 객체를 변경하십시오. 이 메소드는 중간 *layout* 객체를 만듭니다. 이 객체의 목적은 트랜지션 진행을 추적하기 위해 *gesture recognizer*나 *event-handling code*와 함께 작동하기 위함입니다. `event-handling code`가 트랜지션이 끝난 것을 결정 할 때, `finishInteractiveTransition()`이나 `cancelInteractiveTransition()`메소드를 호출하여 중간 *layout*객체를 지우고 의도했던 *layout* 객체로 설정하십시오.
+
+## *Cell*과 *Supplimentary View* 생성하기
+
+&nbsp;&nbsp;&nbsp;&nbsp;
