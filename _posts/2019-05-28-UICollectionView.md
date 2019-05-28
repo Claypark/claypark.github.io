@@ -1,7 +1,7 @@
 ---
 title: "UICollectionView."
 date: 2019-05-28 17:18:28 +0900
-categories: Apple Document
+categories: AppleDocs
 tags:
 - UICollectionView
 - Apple Documentation
