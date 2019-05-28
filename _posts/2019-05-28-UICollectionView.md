@@ -28,3 +28,6 @@ class UICollectionView : UIScrollView
 <br><br>
 
 ## 컬렉션 뷰와 레이아웃 객체
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+컬렉션 뷰와 관련된 가장 중요한 객체는 `UICollectionViewLayout`클래스의 subclass인 *layout* 객체입니다. __*layout*객체는 컬렉션 뷰 내의 모든 *cell*과 *supplementary view*의 구조와 위치를 정의합니다.__ 해당 위치를 정의하더라도, *layout*객체는 실제로 해당 뷰에 적용하지는 않습니다. *cell*과 *supplementary view*를 만드는 것은 *collectionView*와 *dataSource*객체간에 조정이 필요하기 때문입니다. 
