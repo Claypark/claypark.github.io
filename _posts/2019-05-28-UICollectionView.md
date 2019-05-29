@@ -26,7 +26,7 @@ class UICollectionView : UIScrollView
 인터페이스에서 컬렉션 뷰를 추가할 때, 앱에서는 주로 컬렉션 뷰와 관련된 데이터를 관리하는 일을 합니다. [`UICollectionViewDataSource`](https://developer.apple.com/documentation/uikit/uicollectionviewdatasource) 프로토콜을 따르는 컬렉션 뷰는 앱에 의해서 *data source* 객체로부터 데이터를 가져옵니다. 컬렉션 뷰 내의 데이터는 각각의 *item*안에 구성되어있습니다. 그리고 이 *item*들을 *section*으로 그룹핑해서 표시할 수 있습니다. *item*은 화면에 표시하기 위한 데이터의 가장 작은 단위입니다. 예를 들면, 사진 앱에서, *item*은 아마 single image 하나 일 것입니다. 컬렉션 뷰는 *data source*가 설정하고 제공하는 [`UICollectionViewCell`](https://developer.apple.com/documentation/uikit/uicollectionviewcell) 클래스의 인스턴스인 *cell*을 사용하여 *item*들을 화면에 표시합니다.
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-*cell* 이외에도, 컬렉션 뷰는 다른 타입의 뷰를 사용하여 데이터를 화면에 뿌려줄 수 있습니다. 이러한 *supplementary view*들은 각각의 *cell*와 별개로 *section header*와 *footer*처럼 사용할 수 있습니다. *supplementary view*를 만드는 것은 필수적이지 않고, 뷰들의 레이아웃을 배치하는 `UICollectionViewLayout`객체에 정의되어 있습니다.
+*cell* 이외에도, 컬렉션 뷰는 다른 타입의 뷰를 사용하여 데이터를 화면에 뿌려줄 수 있습니다. 이러한 *supplementary view*들은 각각의 *cell*와 별개로 *section header*와 *footer*처럼 사용할 수 있습니다. *supplementary view*를 만드는 것은 필수적이지 않고, 뷰들의 레이아웃을 배치하는 [`UICollectionViewLayout`](https://developer.apple.com/documentation/uikit/uicollectionviewlayout)객체에 정의되어 있습니다.
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 인터페이스에 포함시키는 것(위처럼 data source에 구성하는 것) 이외에도, `UICollectionView` 객체의 메소드들을 사용하여 data source 객체의 순서와 시각적으로 보이는 아이템들의 순서가 일치하는지 확인할 수 있고, 컬렉션뷰 내의 셀을 추가하거나 삭제, 재배치하고 싶을 때마다, 이 클래스의 *insert*, *delete*, *rearrange* 메소드를 사용 할 수 있습니다. 또한 컬렉션 뷰 객체를 *selected item*을 관리하기 위해서 사용할 때가 있는데, 이 동작의 경우에는 컬렉션 뷰는 연결된 [*delegate*](https://developer.apple.com/documentation/uikit/uicollectionview/1618033-delegate) 객체와 함께 작동합니다.
@@ -58,4 +58,10 @@ class UICollectionView : UIScrollView
 
 view를 설정하고 만들기 위한 *data source* 메소드를 구현하는 더 많은 정보는, 이 [`UICollectionViewDataSource`](https://developer.apple.com/documentation/uikit/uicollectionviewdatasource)를 참조하십시오.
 
-## 
+## Item을 대화형으로 재배치하기
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+컬렉션 뷰는 유저 인터렉션 기반으로 *item*을 움직일 수 있게 합니다. 일반적으로 컬렉션 뷰에서 *item*의 순서는 *dataSource*에 정의되어 있습니다. *item* 재배치 기능을 지원하려면, *gesture recognizer*를 컬렉션 뷰 *item*과 유저 인터렉션을 추적하고 *item*의 위치를 갱신하도록 설정해줘야 합니다. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
