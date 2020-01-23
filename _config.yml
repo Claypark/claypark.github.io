@@ -100,9 +100,9 @@ footer_links:
   - title: Instagram
     url: https://www.instagram.com/bak_chung2
     icon: fab fa-instagram
-  - title: Feed
-    url: atom.xml
-    icon: fas fa-rss-square
+  - title: Privacy
+    url: privacy.html
+    icon: fas fa-user-secret
   - title: Mail
     url: mailto://claypark12@gmail.com
     icon: fas fa-envelope-square
