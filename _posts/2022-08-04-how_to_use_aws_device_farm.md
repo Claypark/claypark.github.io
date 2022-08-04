@@ -30,7 +30,7 @@ Test 생성
         - Payload 디렉토리를 zip으로 압축하고, 확장자를 ipa로 바꾼다.
     - Choose your execution environment에서 
       - 기본 환경설정으로 테스트하려면 **Run your test in our standard environment** 체크
-      - 커스텀하게 테스트 하려면 **Run your test in a custom **체크 후 스크립트를 수정하면 된다.
+      - 커스텀하게 테스트 하려면 **Run your test in a custom**체크 후 스크립트를 수정하면 된다.
   - Select Device
     - 테스트하기 원하는 Device pool을 선택한다.
   - Specify device state
