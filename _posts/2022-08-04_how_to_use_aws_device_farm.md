@@ -36,9 +36,3 @@ Test 생성
   - Specify device state
     - 추가적인 디바이스 상태들을 여기에 입력한다. 다른앱을 install하기 원하는 경우 install other apps에 추가하면 된다.
 
-
-```bash
-git rm -r --cached .
-git add .
-git commit -m "fixed untracked files"
-```
