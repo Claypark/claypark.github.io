@@ -1,4 +1,37 @@
----
-layout: home
-author_profile: true
----
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CLPAK</title>
+<link rel="canonical" href="https://claypark.github.io/dev-page/">
+<meta http-equiv="refresh" content="0; url=/dev-page/">
+<meta name="robots" content="noindex, follow">
+<script>
+  // 쿼리스트링(?lang=ja, ?utm_source=... 등)을 보존해 넘긴다.
+  // replace()로 이동해 뒤로가기 시 리다이렉트 루프에 걸리지 않게 한다.
+  location.replace('/dev-page/' + location.search + location.hash);
+</script>
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+                 'Segoe UI', Roboto, sans-serif;
+    background: #fafafa;
+    color: #333;
+  }
+  a { color: #0066cc; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #16181c; color: #e6e6e6; }
+    a { color: #6ea8fe; }
+  }
+</style>
+</head>
+<body>
+  <p>CLPAK 앱 소개 페이지로 이동합니다. <a href="/dev-page/">이동하지 않으면 여기를 눌러주세요.</a></p>
+</body>
+</html>
