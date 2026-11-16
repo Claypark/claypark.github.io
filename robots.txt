@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://claypark.github.io/dev-page/sitemap.xml
+
+#DaumWebMasterTool:5f57197f540d04cfe88b521b73d87b159fe9d25e0fef5a37e53a398824561b22:CNSJIIGOISrSV2aL3hPlgQ==
